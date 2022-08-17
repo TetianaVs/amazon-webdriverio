@@ -1,5 +1,4 @@
 module.exports = class NavBar {
-
   get mainLogo() {
     return $('#nav-logo-sprites');
   }
@@ -76,21 +75,19 @@ module.exports = class NavBar {
     return $('#nav-al-your-account > a:nth-child(2) > span');
   }
 
-  get navCard() {
+  get navCart() {
     return $('#nav-cart');
   }
 
-  //*[@id="nav_prefetch_yourorders"]/span
+  get hamMenuIcon() {
+    return $('#nav-hamburger-menu');
+  }
 
-  /**
-   * a method to encapsule automation code to interact with the page
-   * e.g. to login using username and password
-//    */
-  //   async login(username, password) {
-  //     await this.inputUsername.setValue(username);
-  //     await this.inputPassword.setValue(password);
-  //     await this.btnSubmit.click();
-  //   }
+  get navShopContainer() {
+    return $('#nav-xshop');
+  }
 
-}
-
+  navShopItem(number) {
+    return $(`//*[@id="nav-xshop"]/a[${number}]`);
+  }
+};
