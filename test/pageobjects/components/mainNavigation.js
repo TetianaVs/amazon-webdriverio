@@ -107,6 +107,12 @@ class MainNavigation extends Page {
     await this.xShopGiftCardsList(index).click();
   }
 
+  // Open Sign up page from main navigation
+  async openSignUpFormMainNavigation() {
+    await this.navLinkAccount.moveTo();
+    await this.signUpButton.click();
+  }
+
   open() {
     return super.open('');
   }
