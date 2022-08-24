@@ -55,7 +55,7 @@ class MainNavigation extends Page {
   }
 
   // Click on specific Your List: Create a List{2}, Find a List or Registry{3}, Amazon Smile Charity Lists{4}.
-  // @param {Number} index  - the specific index of wish lists actions.
+  // @param {Number} index  - the specific index of Your Lists.
   async clickYourListsAction(index) {
     await this.selectYourListsAction(index).click();
   }
